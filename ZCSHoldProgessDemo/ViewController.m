@@ -7,23 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "ZCSHoldProgress.h"
 
 @interface ViewController ()
+
+- (void)gestureRecogizerTarget:(UIGestureRecognizer *)gestureRecognizer;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	ZCSHoldProgress *holdProgress = [[ZCSHoldProgress alloc] initWithTarget:self action:@selector(gestureRecogizerTarget:)];
+	holdProgress.minimumPressDuration = 3.0;
+	[self.view addGestureRecognizer:holdProgress];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)gestureRecogizerTarget:(UIGestureRecognizer *)gestureRecognizer {
+	if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+		self.backgroundImageView.highlighted = YES;
+	} else if (gestureRecognizer.state == UIGestureRecognizerStatePossible) {
+		self.backgroundImageView.highlighted = NO;
+	}
 }
 
 @end

@@ -21,6 +21,7 @@
 		113944DA19B79BE700E1FFA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113944BC19B79BE700E1FFA1 /* UIKit.framework */; };
 		113944E219B79BE700E1FFA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113944E019B79BE700E1FFA1 /* InfoPlist.strings */; };
 		113944E419B79BE700E1FFA1 /* ZCSHoldProgessDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113944E319B79BE700E1FFA1 /* ZCSHoldProgessDemoTests.m */; };
+		113944EF19B79C6E00E1FFA1 /* ZCSHoldProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 113944EE19B79C6E00E1FFA1 /* ZCSHoldProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		113944DF19B79BE700E1FFA1 /* ZCSHoldProgessDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZCSHoldProgessDemoTests-Info.plist"; sourceTree = "<group>"; };
 		113944E119B79BE700E1FFA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		113944E319B79BE700E1FFA1 /* ZCSHoldProgessDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCSHoldProgessDemoTests.m; sourceTree = "<group>"; };
+		113944ED19B79C6E00E1FFA1 /* ZCSHoldProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSHoldProgress.h; sourceTree = "<group>"; };
+		113944EE19B79C6E00E1FFA1 /* ZCSHoldProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSHoldProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		113944AC19B79BE700E1FFA1 = {
 			isa = PBXGroup;
 			children = (
+				113944ED19B79C6E00E1FFA1 /* ZCSHoldProgress.h */,
+				113944EE19B79C6E00E1FFA1 /* ZCSHoldProgress.m */,
 				113944BE19B79BE700E1FFA1 /* ZCSHoldProgessDemo */,
 				113944DD19B79BE700E1FFA1 /* ZCSHoldProgessDemoTests */,
 				113944B719B79BE700E1FFA1 /* Frameworks */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113944EF19B79C6E00E1FFA1 /* ZCSHoldProgress.m in Sources */,
 				113944CF19B79BE700E1FFA1 /* ViewController.m in Sources */,
 				113944C919B79BE700E1FFA1 /* AppDelegate.m in Sources */,
 				113944C519B79BE700E1FFA1 /* main.m in Sources */,
