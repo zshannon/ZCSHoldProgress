@@ -48,12 +48,13 @@
 }
 
 - (void)setDefaultValues {
-	self.displayDelay = 0.25;
+	self.displayDelay = 0.25f;
 	self.alpha = 0.75f;
 	self.color = [UIColor blackColor];
 	self.completedColor = [UIColor greenColor];
 	self.borderSize = 3.0f;
 	self.size = 200.0f;
+	self.minimumSize = 60.0f;
 	self.hideOnComplete = YES;
 }
 
@@ -112,7 +113,8 @@
 		return;
 	}
 	CGFloat size = self.size * progress;
-	CGFloat center = (self.size / 2.0) - (size / 2.0);
+	if (size < self.minimumSize) size = self.minimumSize;
+	CGFloat center = (self.size / 2.0f) - (size / 2.0f);
 	self.progressLayer.cornerRadius = size / 2.0f;
 	self.progressLayer.frame = CGRectMake(center, center, size, size);
 }

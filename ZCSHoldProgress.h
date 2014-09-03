@@ -16,6 +16,7 @@
 @property (strong, nonatomic) UIColor *completedColor;
 @property (nonatomic) float borderSize;
 @property (nonatomic) float size;
+@property (nonatomic) float minimumSize;
 @property (nonatomic) BOOL hideOnComplete;
 
 @end
