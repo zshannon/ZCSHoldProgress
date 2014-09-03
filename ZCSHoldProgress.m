@@ -97,10 +97,7 @@
 	self.progressView.layer.borderWidth = self.borderSize;
 	self.progressView.layer.cornerRadius = self.size / 2.0f;
 	self.progressLayer = [[CALayer alloc] init];
-	CGFloat size = 0;
-	CGFloat x = self.borderSize;
-	CGFloat y = self.borderSize;
-	self.progressLayer.frame = CGRectMake(x, y, size, size);
+	self.progressLayer.frame = CGRectZero;
 	self.progressLayer.backgroundColor = self.color.CGColor;
 	self.progressLayer.cornerRadius = self.size / 2.0f;
 	[self.progressView.layer addSublayer:self.progressLayer];
