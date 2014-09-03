@@ -462,6 +462,7 @@
 				113944E919B79BE700E1FFA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		113944EA19B79BE700E1FFA1 /* Build configuration list for PBXNativeTarget "ZCSHoldProgessDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +471,7 @@
 				113944EC19B79BE700E1FFA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
