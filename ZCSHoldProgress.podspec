@@ -17,19 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "ZCSHoldProgress"
   s.version      = "0.0.1"
-  s.summary      = "A short description of ZCSHoldProgress."
+  s.summary      = "A UILongPressGestureRecognizer that displays its progress."
 
   s.description  = <<-DESC
-                   A longer description of ZCSHoldProgress in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   ZCSHoldProgress is a UILongPressGestureRecognizer subclass with some nice (customizable) visual flair. It gives your users a visual indication of their progress towards activating the gesture recognizer.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/ZCSHoldProgress"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/zshannon/ZCSHoldProgress"
+  s.screenshots  = "https://github.com/zshannon/ZCSHoldProgress/raw/screenshots/one.png", "https://github.com/zshannon/ZCSHoldProgress/raw/screenshots/two.png", "https://github.com/zshannon/ZCSHoldProgress/raw/screenshots/three.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -39,8 +34,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,10 +48,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
   
-  s.author             = { "Zane Shannon" => "zcs@smileslaughs.com" }
-  # Or just: s.author    = "Zane Shannon"
-  # s.authors            = { "Zane Shannon" => "zcs@smileslaughs.com" }
-  # s.social_media_url   = "http://twitter.com/Zane Shannon"
+  s.author             = { "Zane Shannon" => "zane@smileslaughs.com" }
+  s.social_media_url   = "http://twitter.com/zaneshannon"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,7 +57,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -78,7 +71,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/ZCSHoldProgress.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/zshannon/ZCSHoldProgress.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +82,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "ZCSHoldProgress.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -128,7 +121,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
