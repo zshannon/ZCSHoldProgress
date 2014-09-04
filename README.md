@@ -7,7 +7,7 @@ ZCSHoldProgress is a UILongPressGestureRecognizer subclass with some nice (custo
 
 ## Add to your Podfile
 
-`pod 'ZCSHoldProgress', '~> 0.0.1'`
+`pod 'ZCSHoldProgress', '~> 0.0.2'`
 
 ## Use in your project
 
