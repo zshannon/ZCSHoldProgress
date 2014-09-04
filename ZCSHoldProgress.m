@@ -145,6 +145,9 @@
 	if (self.progressTimer != nil) {
 		self.state = UIGestureRecognizerStatePossible;
 		[self tearDown];
+	} else if (!self.is_triggered) {
+		self.state = UIGestureRecognizerStateFailed;
+		[self tearDown];
 	}
 }
 

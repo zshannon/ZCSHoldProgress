@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C6DEEB96-D065-47FF-93FD-07FBE73027DA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZCSHoldProgessDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABC288E1-D186-42E9-A8DB-E8831EE47811</key>
+		<string>ssh://github.com/zshannon/ZCSHoldProgress.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZCSHoldProgessDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABC288E1-D186-42E9-A8DB-E8831EE47811</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/zshannon/ZCSHoldProgress.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABC288E1-D186-42E9-A8DB-E8831EE47811</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABC288E1-D186-42E9-A8DB-E8831EE47811</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZCSHoldProgessDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
