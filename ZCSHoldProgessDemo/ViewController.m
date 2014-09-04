@@ -22,14 +22,6 @@
 	ZCSHoldProgress *holdProgress = [[ZCSHoldProgress alloc] initWithTarget:self action:@selector(gestureRecogizerTarget:)];
 	holdProgress.minimumPressDuration = 3.0;
 	[self.view addGestureRecognizer:holdProgress];
-
-	UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTap:)];
-	[singleTap requireGestureRecognizerToFail:holdProgress];
-	[self.view addGestureRecognizer:singleTap];
-}
-
-- (void)singleTap:(UIGestureRecognizer *)gestureRecognizer {
-	NSLog(@"singleTap!");
 }
 
 - (void)gestureRecogizerTarget:(UIGestureRecognizer *)gestureRecognizer {
