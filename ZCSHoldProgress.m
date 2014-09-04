@@ -143,10 +143,11 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	self.lastTouches = touches;
 	if (self.progressTimer != nil) {
+		if (!self.is_triggered) {
+			self.enabled = NO;
+			self.enabled = YES;
+		}
 		self.state = UIGestureRecognizerStatePossible;
-		[self tearDown];
-	} else if (!self.is_triggered) {
-		self.state = UIGestureRecognizerStateFailed;
 		[self tearDown];
 	}
 }
