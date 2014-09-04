@@ -21,6 +21,7 @@
 	[super viewDidLoad];
 	ZCSHoldProgress *holdProgress = [[ZCSHoldProgress alloc] initWithTarget:self action:@selector(gestureRecogizerTarget:)];
 	holdProgress.minimumPressDuration = 3.0;
+	holdProgress.allowableMovement = 1000.0; // Move as much as you want
 	[self.view addGestureRecognizer:holdProgress];
 }
 

@@ -19,6 +19,7 @@
 @property BOOL is_triggered;
 @property (strong, nonatomic) UIView *progressView;
 @property (strong, nonatomic) CALayer *progressLayer;
+@property (nonatomic) CGPoint startingPoint;
 @property (copy, nonatomic) NSSet *lastTouches;
 
 - (void)setDefaultValues;
@@ -128,6 +129,7 @@
 #pragma mark - UIGestureRecognizer Subclass Methods
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	self.startingPoint = [((UITouch *)[touches anyObject])locationInView:nil];
 	self.lastTouches = touches;
 	[self setup];
 }
@@ -158,6 +160,16 @@
 		self.state = UIGestureRecognizerStateChanged;
 		CGPoint center = [((UITouch *)[touches anyObject])locationInView:nil];
 		if (!isnan(center.x) && !isnan(center.y)) self.progressView.center = center;
+	}
+	CGPoint lastCenter = [((UITouch *)[self.lastTouches anyObject])locationInView:nil];
+	CGFloat xDist = (lastCenter.x - self.startingPoint.x);
+	CGFloat yDist = (lastCenter.y - self.startingPoint.y);
+	CGFloat distance = sqrt((xDist * xDist) + (yDist * yDist));
+	if (distance >= self.allowableMovement) {
+		self.enabled = NO;
+		self.enabled = YES;
+		self.state = UIGestureRecognizerStatePossible;
+		[self tearDown];
 	}
 }
 
