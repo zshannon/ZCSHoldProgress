@@ -92,7 +92,15 @@
 
 - (void)setupProgressView {
 	self.progressView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.size, self.size)];
-	CGPoint center = [((UITouch *)[self.lastTouches anyObject])locationInView:nil];
+	UITouch *touch = (UITouch *)[self.lastTouches anyObject];
+	UIView *view = nil;
+	for (UIGestureRecognizer *recognizer in touch.gestureRecognizers) {
+		if ([recognizer isEqual:self]) {
+			view = recognizer.view;
+			break;
+		}
+	}
+	CGPoint center = [touch locationInView:view];
 	self.progressView.center = center;
 	self.progressView.alpha = self.alpha;
 	self.progressView.layer.borderColor = self.color.CGColor;
@@ -129,7 +137,15 @@
 #pragma mark - UIGestureRecognizer Subclass Methods
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	self.startingPoint = [((UITouch *)[touches anyObject])locationInView:nil];
+	UITouch *touch = (UITouch *)[touches anyObject];
+	UIView *view = nil;
+	for (UIGestureRecognizer *recognizer in touch.gestureRecognizers) {
+		if ([recognizer isEqual:self]) {
+			view = recognizer.view;
+			break;
+		}
+	}
+	self.startingPoint = [touch locationInView:view];
 	self.lastTouches = touches;
 	[self setup];
 }
@@ -155,13 +171,21 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch = (UITouch *)[touches anyObject];
+	UIView *view = nil;
+	for (UIGestureRecognizer *recognizer in touch.gestureRecognizers) {
+		if ([recognizer isEqual:self]) {
+			view = recognizer.view;
+			break;
+		}
+	}
 	self.lastTouches = touches;
 	if (self.progressView != nil) {
 		self.state = UIGestureRecognizerStateChanged;
-		CGPoint center = [((UITouch *)[touches anyObject])locationInView:nil];
+		CGPoint center = [touch locationInView:view];
 		if (!isnan(center.x) && !isnan(center.y)) self.progressView.center = center;
 	}
-	CGPoint lastCenter = [((UITouch *)[self.lastTouches anyObject])locationInView:nil];
+	CGPoint lastCenter = [touch locationInView:view];
 	CGFloat xDist = (lastCenter.x - self.startingPoint.x);
 	CGFloat yDist = (lastCenter.y - self.startingPoint.y);
 	CGFloat distance = sqrt((xDist * xDist) + (yDist * yDist));
