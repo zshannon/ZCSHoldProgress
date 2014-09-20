@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,36 +15,68 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" highlightedImage="bg-highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Zp3-Sd-fBE">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" highlightedImage="bg-highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="Zp3-Sd-fBE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="606"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap + Hold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-3a-sww">
-                                <rect key="frame" x="20" y="236" width="280" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFQ-Fo-LFq">
-                                <rect key="frame" x="20" y="270" width="280" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xm-oF-Jrr">
+                                <rect key="frame" x="226" y="255" width="149" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap + Hold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-3a-sww">
+                                        <rect key="frame" x="3" y="-20" width="143" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Mng-od-rbh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFQ-Fo-LFq">
+                                        <rect key="frame" x="3" y="14" width="143" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="9CP-aU-r2w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oFQ-Fo-LFq" firstAttribute="top" secondItem="5Xm-oF-Jrr" secondAttribute="top" constant="14" id="1j1-ov-aOQ"/>
+                                    <constraint firstItem="oFQ-Fo-LFq" firstAttribute="leading" secondItem="GxU-3a-sww" secondAttribute="leading" id="GEI-uv-b86"/>
+                                    <constraint firstItem="oFQ-Fo-LFq" firstAttribute="centerX" secondItem="5Xm-oF-Jrr" secondAttribute="centerX" id="Kk9-QK-lbX"/>
+                                    <constraint firstAttribute="height" constant="90" id="RDR-SY-UtY"/>
+                                    <constraint firstAttribute="width" constant="148.5" id="W3x-kP-go2"/>
+                                    <constraint firstItem="GxU-3a-sww" firstAttribute="top" secondItem="5Xm-oF-Jrr" secondAttribute="top" constant="-20" id="bB0-gc-5Re"/>
+                                    <constraint firstItem="oFQ-Fo-LFq" firstAttribute="trailing" secondItem="GxU-3a-sww" secondAttribute="trailing" id="mbi-iO-RQp"/>
+                                    <constraint firstItem="oFQ-Fo-LFq" firstAttribute="leading" secondItem="5Xm-oF-Jrr" secondAttribute="leading" constant="3" id="u7p-DU-Mtj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zp3-Sd-fBE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="1ZE-mK-zDL"/>
+                            <constraint firstAttribute="centerX" secondItem="5Xm-oF-Jrr" secondAttribute="centerX" id="383-Th-dFz"/>
+                            <constraint firstAttribute="centerY" secondItem="5Xm-oF-Jrr" secondAttribute="centerY" id="5cR-V0-Vok"/>
+                            <constraint firstItem="Zp3-Sd-fBE" firstAttribute="trailing" secondItem="jyV-Pf-zRb" secondAttribute="trailing" id="DKK-0a-3Ut"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zp3-Sd-fBE" secondAttribute="trailing" constant="-16" id="J0T-S4-VRO"/>
+                            <constraint firstItem="Zp3-Sd-fBE" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" constant="6" id="VzT-91-hm1"/>
+                            <constraint firstItem="Zp3-Sd-fBE" firstAttribute="leading" secondItem="jyV-Pf-zRb" secondAttribute="leading" id="dqc-22-xgU"/>
+                            <constraint firstItem="Zp3-Sd-fBE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="x3u-Rg-V7o"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="Zp3-Sd-fBE" id="6JH-o0-8y2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="136"/>
         </scene>
     </scenes>
     <resources>
