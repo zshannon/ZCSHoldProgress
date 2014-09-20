@@ -22,6 +22,7 @@
 		113944E219B79BE700E1FFA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 113944E019B79BE700E1FFA1 /* InfoPlist.strings */; };
 		113944E419B79BE700E1FFA1 /* ZCSHoldProgessDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113944E319B79BE700E1FFA1 /* ZCSHoldProgessDemoTests.m */; };
 		113944EF19B79C6E00E1FFA1 /* ZCSHoldProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 113944EE19B79C6E00E1FFA1 /* ZCSHoldProgress.m */; };
+		11603BE219CE03CE00CD1DDF /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11603BE119CE03CE00CD1DDF /* Launch Screen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		113944E319B79BE700E1FFA1 /* ZCSHoldProgessDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCSHoldProgessDemoTests.m; sourceTree = "<group>"; };
 		113944ED19B79C6E00E1FFA1 /* ZCSHoldProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSHoldProgress.h; sourceTree = "<group>"; };
 		113944EE19B79C6E00E1FFA1 /* ZCSHoldProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSHoldProgress.m; sourceTree = "<group>"; };
+		11603BE119CE03CE00CD1DDF /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				113944CE19B79BE700E1FFA1 /* ViewController.m */,
 				113944D019B79BE700E1FFA1 /* Images.xcassets */,
 				113944BF19B79BE700E1FFA1 /* Supporting Files */,
+				11603BE119CE03CE00CD1DDF /* Launch Screen.xib */,
 			);
 			path = ZCSHoldProgessDemo;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113944D119B79BE700E1FFA1 /* Images.xcassets in Resources */,
+				11603BE219CE03CE00CD1DDF /* Launch Screen.xib in Resources */,
 				113944C319B79BE700E1FFA1 /* InfoPlist.strings in Resources */,
 				113944CC19B79BE700E1FFA1 /* Main.storyboard in Resources */,
 			);
@@ -388,7 +392,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZCSHoldProgessDemo/ZCSHoldProgessDemo-Prefix.pch";
 				INFOPLIST_FILE = "ZCSHoldProgessDemo/ZCSHoldProgessDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,7 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZCSHoldProgessDemo/ZCSHoldProgessDemo-Prefix.pch";
 				INFOPLIST_FILE = "ZCSHoldProgessDemo/ZCSHoldProgessDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
