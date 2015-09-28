@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>FDFC49750342D16E91CCB5C1C7CD2D180B1A1D9C</key>
-		<string>ssh://github.com/zshannon/ZCSHoldProgress.git</string>
+		<string>github.com:zshannon/ZCSHoldProgress.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ZCSHoldProgessDemo.xcodeproj/project.xcworkspace</string>
+	<string>ZCSHoldProgessDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>FDFC49750342D16E91CCB5C1C7CD2D180B1A1D9C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/zshannon/ZCSHoldProgress.git</string>
+	<string>github.com:zshannon/ZCSHoldProgress.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>FDFC49750342D16E91CCB5C1C7CD2D180B1A1D9C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ZCSHoldProgessDemo</string>
+			<string>ZCSHoldProgress</string>
 		</dict>
 	</array>
 </dict>
